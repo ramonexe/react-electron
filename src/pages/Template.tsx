@@ -73,7 +73,7 @@ const Template: React.FC = () => (
             <ListItem>3. Inicie o React com <Code>npm run dev</Code></ListItem>
             <ListItem>4. Inicie o Electron com <Code>npm run electron</Code></ListItem>
             <ListItem>5. Para iniciar o React e Electron juntos, use <Code>npm run dev:electron</Code></ListItem>
-            <ListItem>6. Para criar o executável, use <Code>npm run build</Code> e depois <Code>npm run dist</Code></ListItem>
+            <ListItem>6. <Code><CircleAlert /> Antes de buildar, tenha certeza de que no seu main.js a mainWindow esteja correta</Code>Para criar o executável, use <Code>npm run build</Code> e depois <Code>npm run dist</Code></ListItem>
         </List>
         <Footer>
             <CircleAlert /> Edite ou exclua esta página em <Code>src/pages/Template.tsx</Code> para começar.

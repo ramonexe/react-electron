@@ -1,6 +1,6 @@
 import { app, BrowserWindow } from 'electron';
 
-function createWindow () {
+function createWindow() {
   // Cria a janela
   const mainWindow = new BrowserWindow({
     width: 800,
@@ -11,8 +11,9 @@ function createWindow () {
     }
   });
 
-  // Carrega o index.html do app
-  //mainWindow.loadFile('index.html');
+  // Carrega o index.html do app SE FOR BUILDAR
+  //const indexPath = path.join(__dirname, 'index.html');
+  //mainWindow.loadFile(indexPath);
 
   // Carrega em modo dev
   mainWindow.loadURL('http://localhost:3000');
@@ -23,5 +24,5 @@ function createWindow () {
 
 // Starta o app
 app.whenReady().then(() => {
-    createWindow();
+  createWindow();
 });
